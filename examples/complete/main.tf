@@ -1,4 +1,4 @@
-module "snowflake_api_integration_aws_gateway" {
+module "geff" {
   source                          = "../../"
   prefix                          = var.prefix
   aws_cloudwatch_metric_namespace = var.aws_cloudwatch_metric_namespace
