@@ -75,6 +75,10 @@ variable "snowflake_private_key_path" {
   default = null
 }
 
+variable "s3_acl" {
+  default = "private"
+}
+
 data "aws_caller_identity" "current" {}
 data "aws_region" "current" {}
 data "aws_partition" "current" {}

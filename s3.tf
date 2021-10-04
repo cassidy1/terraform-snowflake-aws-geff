@@ -1,6 +1,6 @@
 resource "aws_s3_bucket" "geff_bucket" {
   bucket = "${var.prefix}-geff-bucket" # Only hiphens + lower alphanumeric are allowed for bucket name
-  acl    = "private"
+  acl    = var.s3_acl
 }
 
 resource "aws_s3_bucket_object" "geff_meta_folder" {
